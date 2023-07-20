@@ -1,5 +1,4 @@
-import { buildTag } from "../helpers/buildTag.js";
-
+import { buildTag } from "../helpers/buildtag.js";
 
 const DragDrop = function() {
     let dad = this;
@@ -81,7 +80,7 @@ const DragDrop = function() {
         // tìm các thành được chỉ định có thể kéo đi (drag) gán thêm thuộc tính draggable
         if (drag.dragZone) {
 
-            let draggables = [...drag.dragZone.querySelectorAll('.drag__item')];
+            let draggables = [...drag.dragZone.querySelectorAll('.drag__item')]; 
     
             dad.setDragItem({items: draggables});
         }
